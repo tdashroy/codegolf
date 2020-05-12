@@ -4,14 +4,12 @@
     {
         foreach(var p in z)
         {
-            var a=new char[99];
-            var s=new int[9];
-            var f=1>0;
             try
             {
-                for(int i=0,d=0,t=0;;)
+                dynamic a=new char[99],s=new int[9],f=1>0,i=0,d=0,t=0,c=' ';
+                for(;;)
                 {
-                    var c=p[i++];
+                    c=p[i++];
                     if(f&c=='>')++d;
                     if(f&c=='<')--d;
                     if(f&c=='+')++a[d];
