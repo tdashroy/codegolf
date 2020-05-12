@@ -6,10 +6,9 @@
         {
             try
             {
-                dynamic a=new char[99],s=new int[9],f=1>0,i=0,d=0,t=0,c=' ';
-                for(;;)
+                for(dynamic a=new char[99],s=new int[9],f=1>0,i=0,d=0,t=0;;)
                 {
-                    c=p[i++];
+                    var c=p[i++];
                     if(f&c=='>')++d;
                     if(f&c=='<')--d;
                     if(f&c=='+')++a[d];
