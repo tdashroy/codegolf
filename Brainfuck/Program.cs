@@ -18,7 +18,7 @@
                     if(f&c=='-')--a[d];
                     if(f&c=='.')System.Console.Write(a[d]);
                     if(c=='[')s[t++]=f?(f=a[d]!=0)?i:-1:i;
-                    if(c==']')i=(f&(f|=s[--t]<0))?s[t]-1:i;
+                    i=(c==']'&&f&(f|=s[--t]<0))?s[t]-1:i;
                 }
             }
             catch{}
